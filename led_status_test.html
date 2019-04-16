@@ -146,7 +146,7 @@ function triggerX()
 	<option value="blink_slow">blink_slow</option>
 	</select>
 	
-	<p>Auto-Close Browser <input type="checkbox" id="auto_close" name="aclose" onclick="autoclose();"/> | Auto-Reboot <input type="checkbox" id="auto_reboot" name="areboot" onclick="autoreboot();"/>
+	<p>Auto-Close Browser <input checked="checked" type="checkbox" id="auto_close" name="aclose" onclick="autoclose();"/> | Auto-Reboot <input type="checkbox" id="auto_reboot" name="areboot" onclick="autoreboot();"/>
 	<span id="dex_txt" style="visibility:hidden"> | DEX mode<input type="checkbox" id="dex" name="DEX" disabled="" onclick="dex();"/></span></p>
 	<p><button id="btnROP" type="button" onclick="initROP(true);" autofocus>Initialize LED Status Test</button> | 
 	<button id="btnTrigger" disabled="" type="button" onclick="triggerX();">Run LED Actions</button><span id="reset" style="visibility:hidden"> | <button id="btnReset" type="button" onclick="disable_trigger();">Reset</button></span></p>
