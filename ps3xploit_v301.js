@@ -1006,7 +1006,6 @@ function setLedStatus(color, task)
                     ledCommand = { id:ledID['green'], id_text:'green', action:ledAction['on'], action_text:'on', mix_colors:false, blink:blink_status, speed:blink_speed };
 					logAdd('Adding Syscall:' + ' ID: ' + ledCommand.id + ' ' + ledCommand.id_text + ' / Action: ' + ledCommand.action + ' ' + ledCommand.action_text + ' / Mix Colors: ' + ledCommand.mix_colors + ' / Blink: ' + ledCommand.blink);
 					return syscall(sc_sys_sm_control_led,ledCommand.id,ledAction['off'],0,0,0,0,0,0)
-					+syscall(sc_sys_sm_control_led,ledCommand.id,ledAction['on'],0,0,0,0,0,0)
 					+syscall(sc_sys_sm_control_led,ledCommand.id,ledAction['on'],0,0,0,0,0,0);
                     break;
                 case "blink_fast":
