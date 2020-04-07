@@ -1908,7 +1908,7 @@ function dex()
 			
 		case "4.85":
 			if(document.getElementById('dex').checked===true){loadcex_485();}//alert("calling loaddex_484");
-			else {loadcex_484();}
+			else {loadcex_485();}
 			disable_trigger();
 			break;
 			
